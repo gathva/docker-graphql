@@ -27,9 +27,13 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t georget2025/docker-graphql:0.0.2 .
+        docker build -t georget2025/docker-graphql:latest .
+
     - name: Push Docker Image
       run: |
-        docker push georget2025/docker-graphql:0.0.2        
+        docker push georget2025/docker-graphql:0.0.2       
+        docker push georget2025/docker-graphql:latest        
+
 
         
       
